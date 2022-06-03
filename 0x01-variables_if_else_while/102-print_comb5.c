@@ -23,7 +23,7 @@ int main(void)
 		{
 			for (num3 = 0; num3 < 10; num3++)
 			{
-				for (num4 = 1; num4 < 10; num4++)
+				for (num4 = 0; num4 < 10; num4++)
 				{
 					putchar(num1 + '0');
 					putchar(num2 + '0');
