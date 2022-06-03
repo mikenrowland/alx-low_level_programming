@@ -25,6 +25,10 @@ int main(void)
 			{
 				for (num4 = 0; num4 < 10; num4++)
 				{
+					if ((num1 && num2 && num3 && num4) == 0)
+					{
+						continue;
+					}
 					putchar(num1 + '0');
 					putchar(num2 + '0');
 					putchar(' ');
