@@ -13,7 +13,7 @@ int main(void)
 
 	for (; num < 10;)
 	{
-		putchar(num);
+		putchar(num + '0');
 		num++;
 	}
 	for (; alpha <= 'f';)
