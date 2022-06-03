@@ -28,12 +28,11 @@ int main(void)
 			}
 			putchar(num1 + '0');
 			putchar(num2 + '0');
-			if ((num1 + num2) == 17)
+			if (num1 < 8)
 			{
-				break;
+				putchar(',');
+				putchar(' ');
 			}
-			putchar(',');
-			putchar(' ');
 		}
 	}
 
