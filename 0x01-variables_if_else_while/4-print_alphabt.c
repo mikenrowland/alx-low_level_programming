@@ -11,11 +11,8 @@ int main(void)
 
 	for (; alpha <= 'z';)
 	{
-		if (alpha == 'e')
-			continue;
-		if (alpha == 'q')
-			continue;
-		putchar(alpha);
+		if (alpha != ('q' && 'e'))
+			putchar(alpha);
 		alpha++;
 	}
 	putchar('\n');
