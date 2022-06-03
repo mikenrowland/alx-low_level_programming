@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	char alpha = "a";
+	char alpha = 'a';
 
-	for (; alpha <= "z";)
+	for (; alpha <= 'z';)
 		putchar(alpha);
 		alpha++;
 	putchar("\n");
