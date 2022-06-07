@@ -1,17 +1,13 @@
-#include <unistd.h>
 #include "main.h"
+
 /**
- * print_alphabet - Entry point
+ * main - Entry point
  *
  * Returns: nothing (Void)
  */
-void print_alphabet(void);
+int main(void);
 {
-	char alpha = 'a';
+	print_alphabet();
 
-	for (; alpha <= 'z';)
-	{
-		_putchar(alpha);
-	}
-	_putchar('\n');
+	return (0);
 }
