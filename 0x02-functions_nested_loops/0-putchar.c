@@ -14,7 +14,5 @@ int main(void)
 
 	write(1, str, sizeof(str) - 1);
 
-	_putchar('\n');
-
 	return (0);
 }
