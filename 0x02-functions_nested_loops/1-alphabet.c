@@ -8,13 +8,7 @@
  */
 int main(void)
 {
-	char alpha = 'a';
-
-	for (; alpha <= 'z';)
-	{
-		_putchar(alpha);
-		alpha++;
-	}
+	print_alphabet();
 	_putchar('\n');
 
 	return (0);
