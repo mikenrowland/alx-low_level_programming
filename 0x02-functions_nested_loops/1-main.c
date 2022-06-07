@@ -1,5 +1,5 @@
 #include <unistd.h>
-
+#include "main.h"
 /**
  * print_alphabet - Entry point
  *
@@ -7,7 +7,11 @@
  */
 void print_alphabet(void);
 {
-	const char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
+	char alpha = 'a';
 
-	write(1, alphabet, sizeof(alphabet) - 1);
+	for (; alpha <= 'z';)
+	{
+		_putchar(alpha);
+	}
+	_putchar('\n');
 }
