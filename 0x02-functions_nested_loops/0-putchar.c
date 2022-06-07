@@ -2,13 +2,6 @@
 #include <unistd.h>
 
 /**
- * putchar function
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-/**
  * main - Entry point
  *
  * Description: a program that prints _putchar, followed by a new line
