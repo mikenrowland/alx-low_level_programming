@@ -2,7 +2,10 @@
 
 /**
  * _islower - Entry point for function
+ * @c: function parameter
+ *
  * Desc:  function that checks for lowercase character.
+ *
  * Return: 1 if lowercase or 0 if otherwise
  */
 int _islower(int c)
