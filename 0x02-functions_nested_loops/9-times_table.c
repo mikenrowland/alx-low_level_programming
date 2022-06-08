@@ -28,8 +28,8 @@ void times_table(void)
 			}
 			else
 			{
-				int x = count / 10;
-				int y = count % 10;
+				int x = res / 10;
+				int y = res % 10;
 
 				_putchar(x + '0');
 				_putchar(y + '0');
