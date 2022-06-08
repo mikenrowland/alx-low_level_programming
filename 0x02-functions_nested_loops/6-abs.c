@@ -11,7 +11,7 @@ int _abs(int n)
 {
 	if (n < 0)
 	{
-		int abs = 0 - n;
+		int abs = 0 - (n);
 
 		_putchar(abs);
 	}
