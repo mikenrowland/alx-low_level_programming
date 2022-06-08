@@ -2,7 +2,8 @@
 
 /**
  * add - Entry
- * @a @b: function parameters of type int
+ * @a: function parameter
+ * @b: function parameter
  * Desc:
  *
  * Return: Always 0 (Success)
