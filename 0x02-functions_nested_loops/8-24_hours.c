@@ -11,23 +11,24 @@ void jack_bauer(void)
 {
 	int num1;
 	int num2;
+	int num3;
+	int num4;
 
-	for (num1 = 0; num1 < 24; num1++)
+	for (num1 = 0; num1 < 3; num1++)
 	{
-		for (num2 = num1; num2 < 60; num2++)
+		for (num2 = 0; num2 < 4; num2++)
 		{
-			int i = num1 / 10;
-			int j = num1 % 10;
-			int x = num2 / 10;
-			int y = num2 % 10;
-
-			_putchar(i + '0');
-			_putchar(j + '0');
-			_putchar(':');
-			_putchar(x + '0');
-			_putchar(y + '0');
-			_putchar('\n');
+			for (num3 = 0; num3 < 6; num3++)
+			{
+				for (num4 = 0; num4 < 10; num4++)
+				{
+					_putchar(num1 + '0');
+					_putchar(num2 + '0');
+					_putchar(':');
+					_putchar(num3 + '0');
+					_putchar(num4 + '0');
+				}
+				_putchar('\n');
 		}
 	}
-	_putchar('\n');
 }
