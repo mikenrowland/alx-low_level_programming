@@ -29,11 +29,12 @@ void times_table(void)
 			else
 			{
 				int x = res / 10;
-				int y = res % 10;
 
 				_putchar(x + '0');
-				_putchar(y + '0');
 			}
+			int y = res % 10;
+
+			_putchar(y + '0');
 
 		}
 		_putchar('\n');
