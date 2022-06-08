@@ -12,7 +12,7 @@ void jack_bauer(void)
 	int num1;
 	int num2;
 
-	for (num1 = 0; num1 < 24; num++)
+	for (num1 = 0; num1 < 24; num1++)
 	{
 		for (num2 = num1 + 1; num2 < 60; num2++)
 		{
@@ -20,7 +20,7 @@ void jack_bauer(void)
 			_putchar((num1 % 10) + '0');
 			_putchar(':');
 			_putchar(num2 / 10) + '0');
-			_putchar((num % 10) + '0');
+			_putchar((num2 % 10) + '0');
 			if (num1 == 23 && num2 == 59)
 			{
 				continue;
