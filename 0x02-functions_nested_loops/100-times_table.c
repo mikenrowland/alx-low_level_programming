@@ -10,6 +10,7 @@ void print_times_table(int n)
 {
 	int count;
 	int multiplier;
+	int res;
 
 	if (n >= 0 || n <= 15)
 		for (count = 0; count <= n; count++)
@@ -19,7 +20,7 @@ void print_times_table(int n)
 			{
 				_putchar(',');
 				_putchar(' ');
-				int res = count * multiplier;
+				res = count * multiplier;
 				int x = res / 10;
 				int y = res % 10;
 
