@@ -9,25 +9,20 @@
  */
 int print_last_digit(int n)
 {
+	int digit;
+
 	if (n < 0)
 	{
 		int num = 0 - n;
 
-		if (num < 10)
-		{
-			return (num);
-		}
-		else
-		{
-			return (num % 10);
-		}
-	}
-	else if (n < 10)
-	{
-		return (n);
+		digit = num % 10;
+		putchar(digit + '0');
+		return (digit);
 	}
 	else
 	{
-		return (n % 10);
+		digit = n % 10;
+		putchar(digit + '0');
+		return (digit);
 	}
 }
