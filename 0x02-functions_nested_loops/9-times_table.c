@@ -13,8 +13,7 @@ void times_table(void)
 
 	for (count = 0; count < 10; count++)
 	{
-		_putchar(count + '0');
-		for (multiplier = 1; multiplier < 10; multiplier++)
+		for (multiplier = 0; multiplier < 10; multiplier++)
 		{
 			int res = count * multiplier;
 
