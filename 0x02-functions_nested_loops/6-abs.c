@@ -5,7 +5,7 @@
  * @n: parameter type
  *
  * Desc: a function that computes the absolute value of an integer
- * Return: Always 0 (Success)
+ * Return: Always value of n
  */
 int _abs(int n)
 {
@@ -13,12 +13,10 @@ int _abs(int n)
 	{
 		int abs = 0 - (n);
 
-		_putchar(abs + '0');
+		return (abs);
 	}
 	else
 	{
-		_putchar(n + '0');
+		return (n);
 	}
-
-	return (0);
 }
