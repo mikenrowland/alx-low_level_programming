@@ -11,6 +11,7 @@ int main(void)
 	long int sum = 0;
 	long int num1 = 0;
 	long int num2 = 1;
+	long int total_sum = 0;
 
 	while (sum <= 4000000)
 	{
@@ -20,8 +21,10 @@ int main(void)
 
 		if (sum % 2 == 0)
 		{
-			printf("%lu, ", sum);
+			total_sum += sum;
 		}
 	}
-	printf("\n");
+	printf("%lu\n", total_sum);
+
+	return (0);
 }
