@@ -19,7 +19,11 @@ int main(void)
 		sum = num1 + num2;
 		num1 = num2;
 		num2 = sum;
-		printf("%d, ", sum);
+		printf("%d", sum);
+		if (count < 49)
+		{
+			printf(", ");
+		}
 	}
 	printf("\n");
 
