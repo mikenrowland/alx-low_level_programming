@@ -5,7 +5,7 @@
  * @c: Function param
  * Desc:  a function that checks for uppercase character
  *
- * Return: Always 0
+ * Return: 1 if uppercase letter is found else 0
  */
 int _isupper(int c)
 {
