@@ -9,17 +9,17 @@
  */
 int main(void)
 {
-int count;
-int num1 = 0;
-int num2 = 1;
-int sum = 0;
+	int count;
+	int num1 = 0;
+	int num2 = 1;
+	int sum = 0;
 
-for (count = 0; count < 50; count++)
-{
-	sum = num1 + num2;
-	num1 = num2;
-	num2 = sum;
-	printf("%d, ", sum);
-}
-printf("\n");
+	for (count = 0; count < 50; count++)
+	{
+		sum = num1 + num2;
+		num1 = num2;
+		num2 = sum;
+		printf("%d, ", sum);
+	}
+	printf("\n");
 }
