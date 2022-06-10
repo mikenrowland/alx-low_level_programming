@@ -18,9 +18,11 @@ void print_diagonal(int n)
 	{
 		for (gap = 0; gap < incr; gap++)
 		{
-			_putchar(' ');
+			if (incr == gap)
+				_putchar('\\');
+				_putchar('\n');
+			else
+				_putchar(' ');
 		}
-		_putchar('\\');
-		_putchar('\n');
 	}
 }
