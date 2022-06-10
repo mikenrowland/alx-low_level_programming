@@ -13,7 +13,9 @@ void print_square(int size)
 	int squ;
 
 	if (size <= 0)
+	{
 		putchar('\n');
+	}
 	for (incr = 0; incr < size; incr++)
 	{
 		for (squ = 0; squ < size; squ++)
