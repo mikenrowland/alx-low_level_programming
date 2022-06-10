@@ -1,17 +1,20 @@
 #include "main.h"
 
-/** print_line - entry point
- *  Dec: draws a straight line in the termnal
+/**
+ * print_line - entry point
+ * @n: function param
+ * Desc: draws a straight line in the termnal
  *
- *  Return:  void
+ * Return: void
  */
 void print_line(int n);
 {
-	char i;
+	int i;
 
-	for (i = 0; i < n; i++)
-	{
-		_putchar('_');
-	}
+	if (n > 0)
+		for (i = 0; i < n; i++)
+		{
+			_putchar('_');
+		}
 	_putchar('\n');
 }
