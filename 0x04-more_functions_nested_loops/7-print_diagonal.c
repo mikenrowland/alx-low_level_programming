@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_diagnonal - function entry point
+ * print_diagnonal - Function entry point
  * @n: param
- * Desc:
+ * Desc: a function that draws a diagonal line on the terminal
  *
- * Return: void
+ * Return: Void
  */
 void print_diagonal(int n)
 {
@@ -24,5 +24,4 @@ void print_diagonal(int n)
 			_putchar('\\');
 			_putchar('\n');
 		}
-		_putchar('\n');
 }
