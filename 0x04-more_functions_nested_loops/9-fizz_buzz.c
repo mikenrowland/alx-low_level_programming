@@ -25,7 +25,7 @@ int main(void)
 		else if (num % 15 == 0)
 			printf("FizzBuzz ");
 		else
-			printf("%d", num);
+			printf("%d ", num);
 	}
 	printf("\n");
 
