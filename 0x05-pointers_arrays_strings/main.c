@@ -1,13 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 
-int main()
+int main(void)
 {
 	char *str;
-	int len;
 
-	str = "";
-	len = _strlen(str);
-	printf("%d\n", len);
+	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+	_puts(str);
 	return (0);
 }
