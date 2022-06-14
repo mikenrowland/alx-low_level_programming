@@ -20,7 +20,7 @@ int _atoi(char *s)
 	{
 		if (s[y] > 47 && s[y] < 58)
 		{
-			num = num * 10 + s[y];
+			num = num * 10 + s[y] - 48;
 		}
 	}
 
