@@ -23,6 +23,11 @@ int _atoi(char *s)
 			num = num * 10 + s[y] - 48;
 		}
 	}
+	for (y = 0; y <= x; y++)
+	{
+		if (s[y] == 45)
+			num = 0 - num;
+	}
 
 	return (num);
 }
