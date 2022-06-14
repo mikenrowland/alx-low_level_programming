@@ -18,6 +18,10 @@ int _atoi(char *s)
 	}
 	for (y = 0; y <= x; y++)
 	{
+		if (s[y] == 59)
+		{
+			break;
+		}
 		if (s[y] > 47 && s[y] < 58)
 		{
 			num = num * 10 + s[y] - 48;
@@ -25,6 +29,8 @@ int _atoi(char *s)
 	}
 	for (y = 0; y <= x; y++)
 	{
+		if (s[y] == 59)
+			break;
 		if (s[y] == 45)
 			num = 0 - num;
 	}
