@@ -19,12 +19,9 @@ int _atoi(char *s)
 	}
 	for (y = 0; y <= x; y++)
 	{
-		for (z = 0; z < 10; z++)
+		if (s[y] > 47 && s[y] < 58)
 		{
-			if ((int) s[y] == z)
-			{
-				num = num * 10 + (int) s[y];
-			}
+			num = num * 10 + s[y];
 		}
 	}
 
