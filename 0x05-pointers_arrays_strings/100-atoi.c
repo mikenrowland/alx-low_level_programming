@@ -23,7 +23,7 @@ int _atoi(char *s)
 		{
 			if ((int) s[y] == z)
 			{
-				num = num * 10 + (s[y] - 48);
+				num = num * 10 + (int) s[y];
 			}
 		}
 	}
