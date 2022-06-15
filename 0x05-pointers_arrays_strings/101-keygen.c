@@ -44,7 +44,7 @@ int main(void)
 			y++;
 		}
 	}
-	p_word[z] = "\0";
+	p_word[z] = '\0';
 	printf("%s\n", p_word);
 
 	return (0);
