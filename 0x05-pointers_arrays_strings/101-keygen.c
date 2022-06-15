@@ -11,40 +11,40 @@
  */
 int main(void)
 {
-	int x = 0;
-	int sel_random;
-	char l_case[] = "abcdefghijklmnopqrstuvwxyz";
-	char u_case[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char nums[] = "0123456789";
-	char syms[] = "!@#$^&*?";
+	int sel_random = 0;
+	int x;
+	int y;
+	int z;
+	char str_combi[] = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$^&*?";
 	char p_word[70];
 
 	srand(time(NULL));
-	sel_random = rand() % 4;
-	do {
-		if (sel_random == 1)
+	
+	while (x != 2772)
+	{
+		x = 0;
+		y = x;
+		z = y;
+		while ((2772 - 122) > x)
 		{
-			p_word[x] = l_case[rand() % 26];
-			sel_random = rand() % 4;
+			sel_random = rand() % 70;
+			p_word[z] = str_combi[sel_random];
+			x += str_combi[sel_random];
+			z++;
 		}
-		else if (sel_random == 2)
+		while (str_combi[y])
 		{
-			p_word[x] = u_case[rand() % 26];
-			sel_random = rand() % 4;
+			if (str_combi[y] == (2772 - x))
+			{
+				p_word[z] = (str_combi[y]);
+				x += str_combi[y];
+				z++;
+				break;
+			}
+			y++;
 		}
-		else if (sel_random == 3)
-		{
-			p_word[x] = nums[rand() % 10];
-			sel_random = rand() % 4;
-		}
-		else
-		{
-			p_word[x] = syms[rand() % 8];
-			sel_random = rand() % 4;
-		}
-		x++;
-	} while (x < 70);
-
+	}
+	p_word[z] = "\0";
 	printf("%s\n", p_word);
 
 	return (0);
