@@ -4,7 +4,7 @@
  * cap_string - function entry point
  * @s: function param
  * Desc: capitalizes all words of a string
- * Return: pointer to string
+ * Return: string
  */
 char *cap_string(char *s)
 {
