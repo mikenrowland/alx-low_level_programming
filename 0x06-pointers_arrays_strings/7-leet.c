@@ -9,21 +9,21 @@
 char *leet(char *s)
 {
 	int x;
+	int y;
+	char *arr1 = "aAeEoOtTlL";
+	char *arr2 = "4433007711";
 
 	for (x = 0; s[x] != '\0'; x++)
 	{
-		while (s[x] == 65 || s[x] == 97)
+		y = 0;
+		while (y < 10)
 		{
-			*(s + x) = '4';
+			if (s[x] == arr1[y])
+			{
+				s[x] = arr2[y];
+			}
+			y++;
 		}
-		while (s[x] == 69 || s[x] == 101)
-			*(s + x) = '3';
-		while (s[x] == 79 || s[x] == 111)
-			*(s + x) = '0';
-		while (s[x] == 84 || s[x] == 116)
-			*(s + x) = '7';
-		while (s[x] == 76 || s[x] == 108)
-			*(s + x) = '1';
 	}
 
 	return (s);
