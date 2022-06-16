@@ -11,13 +11,13 @@ char *string_toupper(char *s)
 	int x = 0;
 	int len = 0;
 
-	while (s[x] != '\0')
+	while (s[x])
 	{
 		len++;
 		x++;
 	}
 
-	for (x = 0; x < len; x++)
+	for (x = 0; x <= len; x++)
 	{
 		if (s[x] > 96 && s[x] < 123)
 		{
