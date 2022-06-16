@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * cap_string - function entry point
- * @s: function param
- * Desc: capitalizes all words of a string
- * Return: string
- */
+* cap_string - function entry point
+* @s: function param
+* Desc: capitalizes all words of a string
+* Return: string
+*/
 char *cap_string(char *s)
 {
 	int x = 0;
