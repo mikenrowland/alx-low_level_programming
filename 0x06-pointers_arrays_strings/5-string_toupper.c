@@ -2,9 +2,9 @@
 
 /**
  * string_toupper - function entry point
- * @*: pointer variable
+ * @s: pointer variable
  * Desc: changes all lowercase letters of a string to uppercase
- * Return: char
+ * Return: string array
  */
 char *string_toupper(char *s)
 {
