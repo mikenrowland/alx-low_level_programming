@@ -4,11 +4,22 @@
 
 int main(void)
 {
-	char str[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
+	char str[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	char *ptr;
 
-	ptr = leet(str);
+	ptr = rot13(str);
 	printf("%s", ptr);
+	printf("------------------------------------\n");
+	printf("%s", str);
+	printf("------------------------------------\n");
+	ptr = rot13(str);
+	printf("%s", ptr);
+	printf("------------------------------------\n");
+	printf("%s", str);
+	printf("------------------------------------\n");
+	ptr = rot13(str);
+	printf("%s", ptr);
+	printf("------------------------------------\n");
 	printf("%s", str);
 
 	return (0);
