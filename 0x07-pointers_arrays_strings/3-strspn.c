@@ -14,18 +14,21 @@ unsigned int _strspn(char *s, char *accept)
 	int x;
 	unsigned int count = 0;
 
-	while (*accept)
+	while (*s)
 	{
-		for (x = 0; s[x] != '\0'; x++)
+		int track = 0;
+		for (x = 0; accept[x]; x++)
 		{
-			if (*accept == s[x])
+			if (*s == accept[x])
 			{
+				track = 1;
 				count++;
-				break;
 			}
 		}
-		accept++;
+		if (track == 0)
+			return count;
+		s++;
 	}
 
-	return (count + 1);
+	return (0);
 }
