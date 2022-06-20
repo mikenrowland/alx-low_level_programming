@@ -1,4 +1,5 @@
 #include "main.h"
+#define NULL 0
 
 /**
  * _strchr - function entry point
@@ -31,5 +32,5 @@ char *_strchr(char *s, char c)
 		return (s);
 	}
 
-	return (s);
+	return (NULL);
 }
