@@ -17,6 +17,7 @@ unsigned int _strspn(char *s, char *accept)
 	while (*s)
 	{
 		int track = 0;
+
 		for (x = 0; accept[x]; x++)
 		{
 			if (*s == accept[x])
@@ -26,7 +27,7 @@ unsigned int _strspn(char *s, char *accept)
 			}
 		}
 		if (track == 0)
-			return count;
+			return (count);
 		s++;
 	}
 
