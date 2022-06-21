@@ -31,7 +31,7 @@ char *_strstr(char *haystack, char *needle)
 				{
 					return (haystack);
 				}
-			} while (haystacl[x] == needle[x]);
+			} while (haystack[x] == needle[x]);
 		}
 		haystack++;
 	}
