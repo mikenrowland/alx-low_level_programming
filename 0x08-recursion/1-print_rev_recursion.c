@@ -1,6 +1,4 @@
 #include "main.h"
-#include <string.h>
-#include <stdio.h>
 
 /**
  * _print_rev_recursion - function entry point
@@ -11,16 +9,14 @@
  */
 void _print_rev_recursion(char *s)
 {
-	int x = strlen(s);
-	
-	if (*(s + (x - 1)) != '\n')
+	int len;
+
+	len = _strlen_recursion(s);
+	if (*(s + (len - 1)) == '\n')
 	{
-		printf("%s", s + (x - 1));
-		x--;
-	/**
-	if (*(s + (x - 1)) != '\n')
-		_print_rev_recursion(s);
-	_putchar(*s + (x - 1));
-	return;
-	*/
+		_putchar('\n');
+		return;
+	}
+	_putchar(*s + (len - 1));
+	_print_rev_recursion(s + 1);
 }
