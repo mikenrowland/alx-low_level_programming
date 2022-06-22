@@ -1,5 +1,7 @@
 #include "main.h"
 
+int validate_sqr(int x, int y);
+
 /**
  * _sqrt_recursion - function entry point
  * @n: function param
@@ -9,16 +11,30 @@
  */
 int _sqrt_recursion(int n)
 {
-	int x = 1;
-	int y = (x + n/x) / 2;
+	if (n == 0)
+	{
+		return (0);
+	}
+	return (validate_sqr(1, n));
+}
 
-	if (n == 1)
-		return (1);
-	if (n <= 0 || x == n)
-		return (-1);
-	if (x * x <= n && (x + 1) * (x + 1) > n)
+/**
+ * validate_sqr - function entry point
+ * @x: param
+ * @y: param
+ * Desc: checks if sqr of x == y
+ *
+ * Return: square of x else -1
+ */
+int validate_sqr(int x, int y)
+{
+	if (x * x == y)
+	{
 		return (x);
-	x += y;
-
-	return (_sqrt_recursion(n));
+	}
+	else if (x * x > y)
+	{
+		return (-1);
+	}
+	return (validate_sqr((x + 1), y));
 }
