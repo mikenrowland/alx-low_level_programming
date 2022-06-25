@@ -26,7 +26,10 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-		sum += atoi(argv[x]);
+		if (atoi(argv[x]) > 0)
+		{
+			sum += atoi(argv[x]);
+		}
 	}
 	printf("%d\n", sum);
 
