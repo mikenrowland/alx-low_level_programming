@@ -11,8 +11,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int sum = 0;
-	int x;
+	int x, sum = 0;
+	char *s;
 
 	if (argc == 1)
 	{
@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	}
 	for (x = 1; x < argc; x++)
 	{
-		if (*argv[x] < 48 || *argv[x] > 57)
+		if (strtol(argv[x], &s, 10) == 0 || *s != '\0')
 		{
 			printf("Error\n");
 			return (1);
