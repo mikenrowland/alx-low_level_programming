@@ -14,12 +14,22 @@ char *_strdup(char *str)
 {
 	char *s;
 	int x = 0;
+	int len;
 
-	s = malloc(sizeof(char) * 1024);
+	while (str[x])
+	{
+		len++;
+		x++;
+	}
+
+	s = malloc(sizeof(char) * (len + 1));
 	if (str == NULL)
 	{
+		free(s);
 		return (NULL);
 	}
+
+	x = 0;
 	while (str[x])
 	{
 		s[x] = str[x];
