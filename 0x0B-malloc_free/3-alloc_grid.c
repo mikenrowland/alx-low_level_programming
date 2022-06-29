@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio>
+#include <stdlib.h>
 
 /**
  * alloc_grid - function entry point
