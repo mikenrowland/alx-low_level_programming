@@ -24,20 +24,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s == NULL)
 		return (NULL);
 	x = 0;
-	while (s1[x] != '\0')
+	while (s1[x])
 	{
 		len++;
 		x++;
 	}
 	len = len + n;
 	x = 0;
-	while (s1[x] != '\0' && x < len)
+	while (s1[x])
 	{
 		s[x] = s1[x];
 		x++;
 	}
 	y = 0;
-	while (s2[y] != '\0' && x < len)
+	while (s2[y] && x < len)
 	{
 		s[x] = s2[y];
 		x++;
