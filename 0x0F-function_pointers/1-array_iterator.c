@@ -7,7 +7,7 @@
  * @array: array to iterate over
  * @size: array size
  * @action: function pointer
- * Desc: executes a function given as a 
+ * Desc: executes a function given as a
  * parameter on each element of an array
  *
  * Return: void
