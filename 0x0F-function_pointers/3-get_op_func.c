@@ -5,8 +5,6 @@
 /**
  * get_op_func - function entry
  * @s: str
- * @a: int
- * @b: int
  * Desc: function that selects the correct function
  * to perform the operation asked by a user
  *
