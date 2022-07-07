@@ -13,7 +13,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int (*fun_ptr)(int, int);
+	int x, y;
 
 	if (argc != 4)
 	{
@@ -29,7 +29,8 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	fun_ptr = get_op_func(argv[2]);
-	printf("%d\n", fun_ptr(atoi(argv[1]), atoi(argv[3])));
+	x = atoi(argv[1]);
+	y = atoi(argv[3]);
+	printf("%d\n", get_op_func(argv[2])(x, y));
 	return (EXIT_SUCCESS);
 }
