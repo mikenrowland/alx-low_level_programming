@@ -10,7 +10,7 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int num = 0, binary, temp, base = 1;
+	unsigned int num = 0, base = 1;
 	int x = 0;
 
 	if (!b)
@@ -21,14 +21,12 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		x++;
 	}
-	binary = atoi(b);
-	while (binary != 0)
+	x--;
+	while (x >= 0)
 	{
-		temp = binary % 10;
-		temp = temp * base;
-		num += temp;
+		num += (b[x] - 48) * base;
 		base = base * 2;
-		binary = binary / 10;
+		x--;
 	}
 	return (num);
 }
